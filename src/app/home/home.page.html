@@ -1,0 +1,30 @@
+<ion-content>
+  <div class="ion-padding">
+    <h1>Ionic Angular Socket.IO Example</h1>
+  </div>
+
+  <ion-grid class="ion-padding">
+    <ion-row>
+      <ion-col sizeMd="2" class="bgcolor ion-text-center">
+        <ion-text color="primary">Time</ion-text>
+      </ion-col>
+      <ion-col sizeMd="2" class="bgcolor ion-text-center">
+        <ion-text color="primary">Temperature</ion-text>
+      </ion-col>
+      <ion-col sizeMd="2" class="bgcolor ion-text-center">
+        <ion-text color="primary">Humidity</ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="data | async as sensor">
+      <ion-col sizeMd="2" class="ion-text-center">
+        {{ sensor[0] | date: 'mediumTime' }}
+      </ion-col>
+      <ion-col sizeMd="2" class="ion-text-center">
+        {{ sensor[1] }}
+      </ion-col>
+      <ion-col sizeMd="2" class="ion-text-center">
+        {{ sensor[2] }}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
