@@ -1,6 +1,6 @@
 {
   "name": "ionic-angular-socketio-example",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Ionic Angular Socket.IO example.",
   "author": "David Buck",
   "repository": "github:davidbuck/ionic-angular-socketio-example",
